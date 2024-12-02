@@ -86,15 +86,6 @@ A partir de la siguiente Figura se puede observar como la corriente de cortocirc
 
 Para esta parte lo que se hace es cambiar las librerí­as para así modificar la velocidad de los transistores.
 
-```Hspice
-
-  .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Aguilar_Ramirez_I_2024_vlsi/Tarea/Tareasim/Hspice/lp5mos/xt018.lib' wo * Este es para FF
-  .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Aguilar_Ramirez_I_2024_vlsi/Tarea/Tareasim/Hspice/lp5mos/xt018.lib' ws * Este es para FS
-  .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Aguilar_Ramirez_I_2024_vlsi/Tarea/Tareasim/Hspice/lp5mos/xt018.lib' wp * Este es para SF
-  .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Aguilar_Ramirez_I_2024_vlsi/Tarea/Tareasim/Hspice/lp5mos/xt018.lib' wz * Este es para SS
-
-```
-
 
 La siguiente Figura corresponde a FF
 
@@ -112,9 +103,9 @@ La siguiente Figura corresponde a SS
 
 ![Logo](Figuras/inversorSS.png)
 
-### b.i tpd vs. la relaciÃ³n PMOS/NMOS
+### b.i tpd vs. la relación PMOS/NMOS
 
-A continuacion se muestra como evoluciona el tiempo de respuesta en relacion con la proporcion de tamaño, claramente se puede observar que en 2.4 tiene un minimo por lo que se puede concluir que la mejor relacion es aproximadamente 2.4 P/N 
+A continuación se muestra como evoluciona el tiempo de respuesta en relacion con la proporcion de tamaño, claramente se puede observar que en 2.4 tiene un minimo por lo que se puede concluir que la mejor relacion es aproximadamente 2.4 P/N 
 
 
 ![Logo](Figuras/tpd.PNG)
