@@ -8,9 +8,9 @@ Integrantes del grupo:
 
 
 
-## Parte 1 DeterminaciÃ³n de las resistencias de canal de transistores mÃ­nimos NMOS y PMOS para el proceso XH018. MÃ³dulo LPMOS: ne, pe (1,8V).
+## Parte 1 Determinación de las resistencias de canal de transistores mí­nimos NMOS y PMOS para el proceso XH018. Módulo LPMOS: ne, pe (1,8V).
 
-### a) DeterminaciÃ³n de la resistencia efectiva
+### a) Determinación de la resistencia efectiva
 
 **nMOS**
 $$I_{Ln} = 3  pA/ \mu m$$
@@ -38,11 +38,11 @@ $$R_{step p} = 1.8/(2 * 170 \mu A) = 5.294 k \ohm * \mu m = 21.176 k \ohm$$
 
 
 
-La ecuaciÃ³n: $R = V_{DD}/2*I_{eff}$ lo cuÃ¡l es la misma a la ecuaciÃ³n $R = V_{DD}/I_{H}+I_{L}$, donde la $I_{eff}$ corresponde a la corriente efectiva que fluye por la resistencia $I_{H}$ y $I_{L}$ son las corrientes en alto y en bajo respectivamente, en el circuito. Esta ecuaciÃ³n tambiÃ©n toma en cuenta otras corrientes del circuito
+La ecuación: $R = V_{DD}/2*I_{eff}$ lo cuál es la misma a la ecuación $R = V_{DD}/I_{H}+I_{L}$, donde la $I_{eff}$ corresponde a la corriente efectiva que fluye por la resistencia $I_{H}$ y $I_{L}$ son las corrientes en alto y en bajo respectivamente, en el circuito. Esta ecuació³n también toma en cuenta otras corrientes del circuito
 
-Por su parte la ecuaciÃ³n: $R = (3* ln(2))/4 * (Vdd/I_{sat})$ toma en cuenta la corriente de saturaciÃ³n del transistor y la tensiÃ³n de alimentaciÃ³n, esta se relaciona mÃ¡s al modelo de pequeÃ±a seÃ±al del transistor y tambiÃ©n contempla la corriente de saturaciÃ³n y la resistencia efectiva.
+Por su parte la ecuación: $R = (3* ln(2))/4 * (Vdd/I_{sat})$ toma en cuenta la corriente de saturación del transistor y la tensión de alimentación, esta se relaciona más al modelo de pequeña señal del transistor y también contempla la corriente de saturación y la resistencia efectiva.
 
-### b) CÃ¡lculo de capacitancia de compuerta
+### b) Cálculo de capacitancia de compuerta
 
 **nMOS**
 
@@ -58,33 +58,33 @@ $$\tau = 3RC = 3*42.352 k \ohm * 0.302 fF = 38.37 ps$$
   
 
 
-## Parte 2 DiseÃ±o de un inversor mÃ­nimo de tamaÃ±o Ã³ptimo
+## Parte 2 Diseño de un inversor mínimo de tamaño óptimo
 
 ### a. Diagrama del inversor a nivel de transistores
 
-A continuaciÃ³n se muestra el esquemÃ¡tico de un inversor a nivel de transistores. Este diagrama ilustra la configuraciÃ³n bÃ¡sica del inversor y los tamaÃ±os de los transistores.
+A continuación se muestra el esquemático de un inversor a nivel de transistores. Este diagrama ilustra la configuración básica del inversor y los tamaños de los transistores.
 
-![Logo](Archivos/Figuras/esquematico.jpeg)
+![Logo](Figuras/esquematico.jpeg)
 
 
 ### Caracterizacion de los transistores
 
-A continuaciÃ³n se muestran las grÃ¡ficas de las curvas caracterÃ­sticas tanto del nMOS como del pMOS, como se puede observar ambos transistores se encuentran en saturaciÃ³n. La primer grÃ¡fica corresponde al nMOS y la segunda corresponde al pMOS. Para verificar la saturaciÃ³n unicamente se puede observar como a partir te la tensiÃ³n $V_{gs}=1.8V$ estÃ¡s corresponde a cada una de las lÃ­neas que salen del origen y en algunos momentos presentan un comportamiento cuadratico por su parte el eje x corresponde a $V_{DS}$ y el eje y $I_{DS}$. Al observar la lÃ­nea de $V_{gs} = 1.8V$ se puede observar como presenta un comportamiento lineal
+A continuación se muestran las gráficas de las curvas caracterí­sticas tanto del nMOS como del pMOS, como se puede observar ambos transistores se encuentran en saturación. La primer gráfica corresponde al nMOS y la segunda corresponde al pMOS. Para verificar la saturación unicamente se puede observar como a partir te la tensión $V_{gs}=1.8V$ estÃ¡s corresponde a cada una de las líneas que salen del origen y en algunos momentos presentan un comportamiento cuadratico por su parte el eje x corresponde a $V_{DS}$ y el eje y $I_{DS}$. Al observar la línea de $V_{gs} = 1.8V$ se puede observar como presenta un comportamiento lineal
 
 
-![Logo](Archivos/Figuras/Caracterizacion_nmos.jpeg)
+![Logo](Figuras/Caracterizacion_nmos.jpeg)
 
-![Logo](Archivos/Figuras/Caracterizacion_pmos.jpeg)
+![Logo](Figuras/Caracterizacion_pmos.jpeg)
 
 ### Corriente de cortocircuito
 
 A partir de la siguiente Figura se puede observar como la corriente de cortocircuito tiene un valor de $I_{corto} â‰ˆ 30pA$
 
-![Logo](Archivos/Figuras/corriente_de_fuga.jpeg)
+![Logo](Figuras/corriente_de_fuga.jpeg)
 
 ### Esquinas
 
-Para esta parte lo que se hace es cambiar las librerÃ­as para asÃ­ modificar la velocidad de los transistores.
+Para esta parte lo que se hace es cambiar las librerí­as para así modificar la velocidad de los transistores.
 
 ```Hspice
 
@@ -98,39 +98,39 @@ Para esta parte lo que se hace es cambiar las librerÃ­as para asÃ­ modificar
 
 La siguiente Figura corresponde a FF
 
-![Logo](Archivos/Figuras/inversorFF.jpeg)
+![Logo](Figuras/inversorFF.jpeg)
 
 La siguiente Figura corresponde a FS
 
-![Logo](Archivos/Figuras/inversorFS.jpeg)
+![Logo](Figuras/inversorFS.jpeg)
 
 La siguiente Figura corresponde a SF
 
-![Logo](Archivos/Figuras/inversorSF.png)
+![Logo](Figuras/inversorSF.png)
 
 La siguiente Figura corresponde a SS
 
-![Logo](Archivos/Figuras/inversorSS.png)
+![Logo](Figuras/inversorSS.png)
 
 ### b.i tpd vs. la relaciÃ³n PMOS/NMOS
 
-A continuacion se muestra como evoluciona el tiempo de respuesta en relacion con la proporcion de tamaÃ±o, claramente se puede observar que en 2.4 tiene un minimo por lo que se puede concluir que la mejor relacion es aproximadamente 2.4 P/N 
+A continuacion se muestra como evoluciona el tiempo de respuesta en relacion con la proporcion de tamaño, claramente se puede observar que en 2.4 tiene un minimo por lo que se puede concluir que la mejor relacion es aproximadamente 2.4 P/N 
 
 
-![Logo](Archivos/Figuras/tpd.PNG)
+![Logo](Figuras/tpd.PNG)
 
 
 ### fo4 optimizado
 
-![Logo](Archivos/Figuras/Resultado_fo4_o.PNG)
+![Logo](Figuras/Resultado_fo4_o.PNG)
 
 ### c. Valores de Rp y Rn
 
-Al obtener que la mejor relaciÃ³n corresponde a 2.5, entonces se realiza la ejecuciÃ³n con esta relaciÃ³n y se obtienen los siguientes tiempos 
+Al obtener que la mejor relación corresponde a 2.5, entonces se realiza la ejecución con esta relación y se obtienen los siguientes tiempos 
 
-![Logo](Archivos/Figuras/tiempos.png)
+![Logo](Figuras/tiempos.png)
 
-A partir de estos se utiliza las ecuaciÃ³n 8.8 del libro debido a quÃ© del FO4 son los segmentos donde se han realizado las pruebas. La ecuaciÃ³n es:
+A partir de estos se utiliza las ecuación 8.8 del libro debido a que del FO4 son los segmentos donde se han realizado las pruebas. La ecuación es:
 
 $$â–³t_{pdr} = 3/2 (2*R_{p})*C$$
 
@@ -142,4 +142,11 @@ $$R_{p} = 27.3k \ohm â‰ˆ 27k\ohm \mu m\$$
 
 $$R_{n} = 13.86k \ohm â‰ˆ 13k\ohm \mu m$$
 
-De lo anterior se puede observar como la relaciÃ³n que usualmente se maneja de $R_{p} = 2*R_{n} \ohm$ se puede decir que se cumple. En cuÃ¡nto a la preferencia se prefiere el resultado obtenido en el punto c debido a que este mÃ©todo elimina los efectos debidos a las parasitancias y toma en cuenta el efecto de la pendiente realÃ­stica de las seÃ±ales de entrada, ademÃ¡s de que al colocar una carga que corresponde al 4 inversor permite un anÃ¡lisis mejorado que en la primer parte que nada mÃ¡s se toma en cuenta valores brindados por el fabricante.
+De lo anterior se puede observar como la relación que usualmente se maneja de $R_{p} = 2*R_{n} \ohm$ se puede decir que se cumple. En cuÃ¡nto a la preferencia se prefiere el resultado obtenido en el punto c debido a que este método elimina los efectos debidos a las parasitancias y toma en cuenta el efecto de la pendiente realística de las señales de entrada, además de que al colocar una carga que corresponde al 4 inversor permite un análisis mejorado que en la primer parte que nada más se toma en cuenta valores brindados por el fabricante.
+
+## Referencias
+[1] N. Weste and D. Harris, CMOS VLSI Design: A Circuits and Systems Perspective, 4 edition. Boston: Addison-Wesley, 2010.
+
+[2] Process and Device Specification XH018 - 0.18 μm Modular Mixed Signal HV CMOS, PDS-018-13. Release 7.0.1. XFAB Semiconductor Foundries, Nov. 2017.
+
+[3] J. Rabaey, A. Chandrakasan y B. Nikolic. Digital Integrated Circuits: A Design Perspective.
